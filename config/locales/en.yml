@@ -29,3 +29,12 @@
 
 en:
   hello: "Hello world"
+  products:
+    index:
+      title: "Products"
+  registrations:
+    new:
+      signUp: "Create an account"
+  sessions:
+    new:
+      signUp: "Sign in"

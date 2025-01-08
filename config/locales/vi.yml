@@ -1,0 +1,11 @@
+vi:
+  hello: "Xin chào"
+  products:
+    index:
+      title: "Sản phẩm"
+  registrations:
+    new:
+      signUp: "Tạo tài khoản"
+  sessions:
+    new:
+      signUp: "Đăng nhập tài khoản"

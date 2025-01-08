@@ -23,6 +23,27 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav>
+      <%= link_to "Home", root_path %>
+      <% if authenticated? %>
+        <%= Current.user.email_address %>
+        <%= button_to "Log out", session_path, method: :delete %>
+      <% else %>
+        <%= link_to "Sign in", new_session_path %>
+        <%= link_to "Sign up", new_registration_path %>
+      <% end %>
+      <hr>
+      <% if notice = flash[:notice] %>
+        <div class="notice"><%= notice %></div>
+      <% end %>
+      <% if alert = flash[:alert] %>
+        <div class="alert"><%= alert %></div>
+      <% end %>
+      <hr>
+    </nav>
+
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>
