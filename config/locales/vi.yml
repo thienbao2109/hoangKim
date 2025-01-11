@@ -8,4 +8,4 @@ vi:
       signUp: "Tạo tài khoản"
   sessions:
     new:
-      signUp: "Đăng nhập tài khoản"
+      signIn: "Đăng nhập tài khoản"
